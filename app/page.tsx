@@ -762,156 +762,21 @@ export default function CaseStudyPage() {
 
           <div className="mb-20">
             <h3 className="text-lg font-semibold text-slate-900 mb-8">Key Interface Designs</h3>
-            <Tabs defaultValue="orders" className="w-full">
-              <TabsList className="grid w-full grid-cols-4 bg-white border border-gray-100">
-                <TabsTrigger value="orders" className="text-sm">
-                  Order Management
-                </TabsTrigger>
-                <TabsTrigger value="alerts" className="text-sm">
-                  Alert Engine
-                </TabsTrigger>
-                <TabsTrigger value="optimization" className="text-sm">
-                  Consumption Logic
-                </TabsTrigger>
-                <TabsTrigger value="dashboard" className="text-sm">
-                  Client Dashboard
-                </TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="orders" className="mt-6">
-                <div className="bg-white p-6 rounded-lg border border-gray-100">
-                  <div className="mb-6">
-                    <h4 className="font-medium text-slate-900 mb-2">Operations Portal - Order Management</h4>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      Streamlined workflow from order creation to fulfillment with automated tracking
-                    </p>
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
-                    <div className="w-full h-[500px] flex items-center justify-center">
-                      <div className="w-full h-full max-w-full">
-                        <iframe
-                          src="https://v0-new-project-clntr1owasm.vercel.app/"
-                          className="w-full h-full border-0 rounded-lg"
-                          style={{
-                            transform: "scale(0.8)",
-                            transformOrigin: "top left",
-                            width: "125%",
-                            height: "125%",
-                          }}
-                          title="Order Management Interface"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-8 grid md:grid-cols-3 gap-6">
-                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                      <div className="flex items-center gap-3 mb-3">
-                        <Filter className="w-5 h-5 text-blue-600" />
-                        <h5 className="font-medium text-slate-900">Status Tracking</h5>
-                      </div>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        Track orders through Initiated → Accepted → In Review → Fulfilled with automated status updates
-                      </p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                      <div className="flex items-center gap-3 mb-3">
-                        <Upload className="w-5 h-5 text-green-600" />
-                        <h5 className="font-medium text-slate-900">Validation & Upload</h5>
-                      </div>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        Built-in validation during stamp upload to prevent article code errors and ensure compliance
-                      </p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                      <div className="flex items-center gap-3 mb-3">
-                        <Bell className="w-5 h-5 text-purple-600" />
-                        <h5 className="font-medium text-slate-900">Automated Workflow</h5>
-                      </div>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        Reduces 9-step manual process to automated workflow with stakeholder notifications
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="alerts" className="mt-6">
-                <div className="bg-white p-6 rounded-lg border border-gray-100">
-                  <div className="mb-6">
-                    <h4 className="font-medium text-slate-900 mb-2">Wallet Alert Engine</h4>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      Intelligent monitoring with consumption pattern analysis and predictive alerts
-                    </p>
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
-                    <AlertEngine />
-                  </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="optimization" className="mt-6">
-                <div className="bg-white p-6 rounded-lg border border-gray-100">
-                  <div className="mb-6">
-                    <h4 className="font-medium text-slate-900 mb-2">Consumption Optimization Engine</h4>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      Intelligent stamp selection to minimize loss while respecting merge limits
-                    </p>
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
-                    <ConsumptionLogic />
-                  </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="dashboard" className="mt-6">
-                <div className="bg-white p-6 rounded-lg border border-gray-100">
-                  <div className="mb-6">
-                    <h4 className="font-medium text-slate-900 mb-2">Contract360 Client Dashboard</h4>
-                    <p className="text-slate-600 text-sm leading-relaxed">
-                      Self-service portal for wallet management, alert settings, and order creation
-                    </p>
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-gray-200">
-                    <Image
-                      src="/images/client-dashboard.png"
-                      alt="Client Dashboard - Stamp Order Management Interface"
-                      width={1200}
-                      height={600}
-                      className="w-full h-auto"
-                    />
-                  </div>
-                  <div className="mt-8 grid md:grid-cols-3 gap-6">
-                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                      <div className="flex items-center gap-3 mb-3">
-                        <Wallet className="w-5 h-5 text-blue-600" />
-                        <h5 className="font-medium text-slate-900">Self-Service Orders</h5>
-                      </div>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        Clients can create stamp orders directly with status tracking and automated notifications
-                      </p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                      <div className="flex items-center gap-3 mb-3">
-                        <Bell className="w-5 h-5 text-green-600" />
-                        <h5 className="font-medium text-slate-900">Alert Configuration</h5>
-                      </div>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        Set custom thresholds and receive predictive alerts before running out of stamps
-                      </p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
-                      <div className="flex items-center gap-3 mb-3">
-                        <TrendingUp className="w-5 h-5 text-purple-600" />
-                        <h5 className="font-medium text-slate-900">Usage Analytics</h5>
-                      </div>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        Track consumption patterns, savings from optimization, and procurement history
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </TabsContent>
-            </Tabs>
+            <div className="mb-20">
+            <h3 className="text-lg font-semibold text-slate-900 mb-8">Key Interface Designs</h3>
+            <div className="rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
+              <div className="w-full h-[600px] flex items-center justify-center">
+                <iframe
+                  src="https://v0-new-project-clntr1owasm.vercel.app/"
+                  className="w-full h-full border-0 rounded-lg"
+                  title="Order Management Interface"
+                  style={{
+                    minHeight: "600px",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
