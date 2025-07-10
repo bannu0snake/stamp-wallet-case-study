@@ -790,7 +790,7 @@ export default function CaseStudyPage() {
                     <div className="w-full h-[500px] flex items-center justify-center">
                       <div className="w-full h-full max-w-full">
                         <iframe
-                          src="https://kzmin6wsz3yc3rzr8xo6.lite.vusercontent.net/orders"
+                          src="https://v0-new-project-clntr1owasm.vercel.app/"
                           className="w-full h-full border-0 rounded-lg"
                           style={{
                             transform: "scale(0.8)",
