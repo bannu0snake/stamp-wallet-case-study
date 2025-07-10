@@ -762,8 +762,6 @@ export default function CaseStudyPage() {
 
           <div className="mb-20">
             <h3 className="text-lg font-semibold text-slate-900 mb-8">Key Interface Designs</h3>
-            <div className="mb-20">
-            <h3 className="text-lg font-semibold text-slate-900 mb-8">Key Interface Designs</h3>
             <div className="rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
               <div className="w-full h-[600px] flex items-center justify-center">
                 <iframe
@@ -776,7 +774,6 @@ export default function CaseStudyPage() {
                 />
               </div>
             </div>
-          </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
