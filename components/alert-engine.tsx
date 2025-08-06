@@ -14,7 +14,7 @@ export default function AlertEngine() {
   const alerts = [
     {
       id: 1,
-      client: "HDFC Bank",
+      client: "XYZ Bank",
       state: "Karnataka",
       articleCode: "KA1008",
       denomination: "₹500",
@@ -42,7 +42,7 @@ export default function AlertEngine() {
     },
     {
       id: 3,
-      client: "HDFC Bank",
+      client: "XYZ Bank",
       state: "Tamil Nadu",
       articleCode: "TN3005",
       denomination: "₹1000",
@@ -173,7 +173,7 @@ export default function AlertEngine() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                     <div>
-                      <p className="font-medium">HDFC Bank - Karnataka</p>
+                      <p className="font-medium">XYZ Bank - Karnataka</p>
                       <p className="text-sm text-gray-600">₹500 stamps</p>
                     </div>
                     <div className="text-right">

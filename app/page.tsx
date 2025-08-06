@@ -112,7 +112,7 @@ export default function CaseStudyPage() {
               <div className="flex flex-wrap gap-6 text-sm text-slate-500">
                 <span className="flex items-center gap-2">
                   <Users className="w-4 h-4" />
-                  HDFC Bank & Enterprise Clients
+                  XYZ Bank & Enterprise Clients
                 </span>
                 <span className="flex items-center gap-2">
                   <Clock className="w-4 h-4" />3 months
@@ -194,7 +194,7 @@ export default function CaseStudyPage() {
                     </div>
                   </div>
                   <p className="text-slate-600 leading-relaxed">
-                    Enterprise clients like HDFC Bank needed an intelligent system to automatically monitor stamp
+                    Enterprise clients like XYZ Bank needed an intelligent system to automatically monitor stamp
                     inventory, optimize consumption to minimize loss, and streamline the procurement workflow across
                     multiple stakeholders.
                   </p>
@@ -209,7 +209,7 @@ export default function CaseStudyPage() {
                         run out, and optimize consumption to minimize waste. The manual process was unsustainable for
                         our volume.
                       </blockquote>
-                      <cite className="text-sm text-slate-500">— Revenue Manager, HDFC Bank</cite>
+                      <cite className="text-sm text-slate-500">— Revenue Manager, XYZ Bank</cite>
                     </div>
                   </div>
                 </div>
@@ -464,7 +464,7 @@ export default function CaseStudyPage() {
                     </Avatar>
                     <div className="flex-1">
                       <h4 className="font-semibold text-slate-900 mb-1">Priya Sharma</h4>
-                      <p className="text-blue-600 font-medium mb-6">Revenue Manager, HDFC Bank</p>
+                      <p className="text-blue-600 font-medium mb-6">Revenue Manager, XYZ Bank</p>
 
                       <div className="grid md:grid-cols-3 gap-6 text-sm">
                         <div>
@@ -661,7 +661,7 @@ export default function CaseStudyPage() {
                 </p>
                 <p className="text-slate-700 mt-3 leading-relaxed">
                   Small enterprises wanted simple threshold-based alerts they could manage themselves, while large
-                  enterprises like HDFC needed sophisticated consumption pattern analysis and automated procurement
+                  enterprises like XYZ needed sophisticated consumption pattern analysis and automated procurement
                   workflows.
                 </p>
               </div>
@@ -866,7 +866,7 @@ export default function CaseStudyPage() {
                       predictive alerts 3 days before we actually run out, and the consumption optimization has saved us
                       lakhs in stamp duty loss."
                     </blockquote>
-                    <cite className="text-sm text-slate-500">— Revenue Manager, HDFC Bank</cite>
+                    <cite className="text-sm text-slate-500">— Revenue Manager, XYZ Bank</cite>
                   </div>
                 </div>
               </div>
